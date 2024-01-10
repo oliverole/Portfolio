@@ -1,0 +1,114 @@
+@font-face{ 
+    font-family: "h1"; src: url(../fonts/);
+}
+
+@font-face {
+    font-family: "h2";
+    src: url(fonts/Arsenal-Regular.ttf);
+
+}
+@font-face {
+        font-family: "h3";
+        src: url(fonts/Arsenal-Regular.ttf);
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+header {
+    background-color: #474787;
+    border-radius: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 5px;
+}
+  nav {
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+
+.h1 {
+    
+    font-family: h1;
+    font-size: 3.5rem;
+    color: #201E20;
+    text-align: center;
+}
+
+.h2 {
+    font-family: h2;
+    color: #201E20;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.h3 {
+    font-family: h3;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.p {
+    font-family: bodytext;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+}
+
+.billede {
+  size: 200px;
+  margin-left: 450px;
+  position: absolute;
+}
+
+.billede2 {
+  margin-top: 220px;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color:whitesmoke;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  margin: 0 5px;
+  margin-top: 215px;
+  border-radius: 15px;
+}
+
+
+ 
