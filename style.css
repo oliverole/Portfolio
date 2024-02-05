@@ -128,7 +128,6 @@
 
 
 h1 {
-    
     font-family: 'Arsenal', sans-serif;
     font-size: 4.5rem;
     color: #201E20;
@@ -282,7 +281,6 @@ main {
   align-items: center;
 }
 
-
 .footerinfo {
   font-size: 18px;
   display: flex;
@@ -300,7 +298,6 @@ footer {
   bottom: 0;
   left: 0;
 }
-
 
 .index-footer {
   position: fixed;
@@ -334,7 +331,7 @@ footer {
 
 .cv-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 1fr 2fr;
   gap: 20px;
   position: relative;
   top: 0px;
@@ -342,8 +339,9 @@ footer {
 
 .cv-billede {
   padding: 100px;
-  left: 50px;
+  left: -50px;
   top: -25px;
+  position: relative;
 
 }
 
@@ -400,8 +398,6 @@ justify-content: space-around;
   display: none;
   cursor: pointer; 
 }
-
-
 
 .bar {
   width: 35px;
@@ -562,7 +558,6 @@ justify-content: space-around;
     width: 100%;
   }
 
-  
   .menu li {
     margin: 15px;
     padding: 0 5px;
@@ -577,8 +572,6 @@ justify-content: space-around;
     display: flex;
   }
 }
-
-
 
 :root {
   --clr-dark: #333;
@@ -597,8 +590,6 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
 }
-
-
 
 .logo {
   font-size: 24px;
