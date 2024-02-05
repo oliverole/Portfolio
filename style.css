@@ -1,5 +1,12 @@
-@font-face{ 
-    font-family: "h1"; src: url(../fonts/);
+@font-face {
+  font-family: 'Arsenal';
+  src: url('fonts/Arsenal-Regular.ttf') format('truetype');
+  
+}
+
+@font-face {
+  src: url(fonts/InriaSerif-Regular.ttf);
+  font-family: "bodytext"
 }
 
 @font-face {
@@ -12,30 +19,107 @@
         src: url(fonts/Arsenal-Regular.ttf);
 
 }
-body {
+  body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    background-color: #F8F8FF;
   }
 
-header {
+  .h2hvid, .h3hvid {
+    margin-right: 50px;
+  }
+
+  .portindex {
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: -80px;
+  }
+
+  .cv-p {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #B7B7F6;
+    color: #333;
+    padding: 50px;
+    margin: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+  }
+
+  .cv-p2 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #B7B7F6;
+    color: #333;
+    padding: 50px;
+    margin: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    right: 125px;
+    top: 50px;
+  }
+
+  .cv-p p {
+    margin-bottom: -40px;
+    line-height: 1.5;
+    word-spacing: normal;
+  }
+
+  .cv-p h2, .cv-p2 h2 {
+    margin-top: 0px;
+  }
+
+  .cv-p2 p {
+    margin-bottom: -40px; 
+    line-height: 1.5;
+    word-spacing: normal; 
+  }
+
+  .portindex img {
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .barbie-video {
+    width: 300px;
+    height: 150px;
+  
+  }
+
+  header {
     background-color: #474787;
     border-radius: 25px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 5px;
-}
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 20px;
+    position: relative;
+    left: -50px;
+  }
+  
   nav {
     padding: 10px;
     text-align: center;
-
   }
-
+  
   nav ul li {
     display: inline-block;
     margin: 0 15px;
   }
-
+  
   nav a {
     text-decoration: none;
     color: #fff;
@@ -43,54 +127,154 @@ header {
   }
 
 
-.h1 {
+h1 {
     
-    font-family: h1;
-    font-size: 3.5rem;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 4.5rem;
     color: #201E20;
     text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    
 }
 
-.h2 {
+h2 {
     font-family: h2;
     color: #201E20;
     text-align: center;
     margin-top: 50px;
 }
 
-.h3 {
+.h2hvid {
+  font-family: h2;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.action-button {
+  background-color: blue;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  left: -50px;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: darkblue;
+}
+
+.overlay .action-button {
+  margin: 10px;
+}
+
+
+h3 {
     font-family: h3;
     text-align: center;
     margin-top: 50px;
 }
 
-.p {
-    font-family: bodytext;
+.h3hvid {
+    font-family: h3;
     text-align: center;
-    margin: 15px;
-    padding: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+.knapper {
+  margin-top: 50px;
+}
+
+p {
+  font-family: bodytext;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 25px;
+  font-family: 'Inria Serif', serif;
+}
+
+.tema2p {
+  
+  margin-top: -70px;
+  padding: 80px;
+  line-height: 1.5;
+}
+
+.tema3p {
+  margin: 80px;
+  margin-top: -80px;
+  padding: 80px;
+  line-height: 1.5;
+}
+
+.tema3p2 {
+  margin: 80px;
+  margin-top: -80px;
+  padding: 80px;
+  line-height: 1.5;
 }
 
 .billede {
   size: 200px;
-  margin-left: 450px;
+  margin-left: 35%;
   position: absolute;
 }
 
 .billede2 {
-  margin-top: 220px;
+  margin-top: -20px;
   width: 100%;
   height: auto;
+  z-index: 0;
 }
 
 main {
   position: relative;
+
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+}
+
+.box {
+  background-color: whitesmoke;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  margin: 0px;
+  margin-top: 215px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.semesterbox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -98,17 +282,417 @@ main {
   align-items: center;
 }
 
-.box {
-  background-color:whitesmoke;
-  cursor: pointer;
-  aspect-ratio: 1/1;
-  max-width: 200px;
-  max-height: 200px;
+
+.footerinfo {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  margin: -25px;
+}
+
+footer {
+  background-color: #454545;
+  color: white;
+  padding: 0px;
+  text-align: center;
   width: 100%;
-  margin: 0 5px;
-  margin-top: 215px;
-  border-radius: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 
- 
+.index-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.wireframe3 {
+  margin-top: -150px;
+  margin-left: 75px;
+}
+
+.persindex {
+  margin-left: 50px;  
+}
+
+.semesterbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cvbillede {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.cv-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  position: relative;
+  top: 0px;
+}
+
+.cv-billede {
+  padding: 100px;
+  left: 50px;
+  top: -25px;
+
+}
+
+.cv-text {
+  text-align: left;
+}
+
+.cv-image2 {
+  max-width: 100%;
+  height: auto;
+}
+
+.cv-details {
+  text-align: left;
+  position: relative;
+}
+
+.project-container {
+  padding: 0px;
+  margin-left: 100px;
+  margin-top: 50px; 
+}
+
+.project-box {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #B7B7F6;
+  color: #333;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.casinomobile {
+  width: 95%;
+}
+
+.hi-fi {
+display: flex;
+justify-content: space-around;
+}
+
+ .wireframe-tema3 {
+  width: 100%;
+ }
+
+/* Burgermenu */
+
+.burger-menu {
+  display: none;
+  cursor: pointer; 
+}
+
+
+
+.bar {
+  width: 35px;
+  height: 4px;
+  background-color: #fff;
+  margin: 7px 0;
+  transition: 0.4s;
+}
+
+
+
+
+
+@media only screen and (max-width: 769px) {
+  body {
+    background-color: #474787;
+  }
+
+  header {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  nav {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .portindex img {
+    margin-left: 100px;
+    margin-top: -20px;
+  }
+
+  .h1h2 {
+    margin-top: 450px;
+  }
+
+  .cv-container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .project-box {
+    margin-left: -20px;
+  }
+
+  .cv-p {
+    margin-left: -40px;
+  
+  }
+
+  .cv-p2 {
+    margin-left: 100px;
+  }
+
+  .cv-billede {
+    display: none;
+  }
+
+  /* Burgermenu mobil*/
+
+  .burger-menu {
+    display: block;
+    order: 1;
+
+  }
+
+  nav ul {
+    list-style-type: none;
+
+    text-align: center;
+    display: none;
+  }
+
+  nav.active ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background-color: #2C2C54;
+  }
+
+  nav li {
+    display: block;
+    padding: 15px;
+  }
+
+  /* Burgermenu slut*/
+
+  h1 {
+    font-size: 3rem;
+    margin-top: 5px;
+  }
+
+  .h2hvid {
+    margin-top: -400px;
+    
+  }
+
+  .h3hvid {
+    margin-top: 00px;
+  }
+
+  .overlay {
+    top: 70%;
+  }
+
+  .knapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 50px;
+    bottom: 200px;
+  }
+
+  .billede,
+  .billede2 {
+    display: none;
+  }
+
+  .action-button {
+    width: 80%;
+    margin: 10px;
+  }
+
+  .wireframe3,
+  .casinomobile,
+  .hi-fi,
+  .cvbillede,
+  .pers-index,
+  .cv-container {
+    display: none;
+  }
+
+  .tema2p p,
+  .tema3p p,
+  .tema3p2 p,
+  .h2,
+  .h3,
+  .cv-details p {
+    width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+    background-color: var(--clr-dark);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+  }
+
+  
+  .menu li {
+    margin: 15px;
+    padding: 0 5px;
+  }
+
+  .menu li {
+    margin: 15px;
+    padding: 0 5px;
+  }
+
+  button[aria-expanded="true"] + .menu {
+    display: flex;
+  }
+}
+
+
+
+:root {
+  --clr-dark: #333;
+  --clr-darker: #111;
+  --clr-light: #fff;
+  --clr-light-toned: #abe;
+  --clr-accent: #f00;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* Layout af body, der sikrer footer i bunden ved manglende indhold i main */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+
+
+.logo {
+  font-size: 24px;
+}
+
+/* GLOBAL MENU */
+
+/* STANDARD MENULINJE */
+
+header nav {
+  /* Flexbox items er div med logo, button (skjult) og ul menu */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0px;
+  margin-top: 0px;
+  padding: 15px;
+  
+  display: flex;
+  border-radius: 5px;
+}
+
+.menu li {
+  
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+.menu a:hover {
+  color: var(--clr-light-toned);
+}
+
+button {
+  color: var(--clr-light);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0px;
+  margin-left: 300px;
+}
+
+/* Skjul burgermenulisten som standard */
+.menu {
+  display: none;
+}
+
+/* Vis menuen, når knappen er udvidet (åben) */
+button[aria-expanded="true"] + .menu {
+  display: flex;
+}
+
+/* Skjul burgermenu-ikonet som standard på større visninger */
+@media screen and (min-width: 769px) {
+  .menu {
+    display: flex;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    background-color: var(--clr-dark);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+  }
+
+  
+  .menu li {
+    margin: 15px;
+    padding: 0 5px;
+  }
+
+  button[aria-expanded="true"] + .menu {
+    display: flex;
+  }
+}

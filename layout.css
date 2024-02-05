@@ -1,0 +1,101 @@
+.grid_1-1-1-1-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    max-width: 100%;
+    height: auto;   
+    display: block;  
+    margin: 0 auto;
+    
+}
+
+
+.cv-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr; /* 1/3 for image, 2/3 for text */
+    gap: 20px; /* Adjust the gap between the image and text box */
+    padding: px; /* Add padding for spacing */
+}
+
+.cv-billede {
+    position: relative;
+    left: -50px;
+}
+
+/* <h1>Mine 1. semesterprojekter</h1>
+        <div class="semesterbox">
+            <a href="tema2.html" class="box">
+                <img src="tema2-image.jpg" alt="Tema 2 Image">
+                <h3>Tema 2</h3>
+            </a>
+            <a href="tema3.html" class="box">
+                <img src="images/casino-1.png" alt="Tema 3 Image">
+                <h3>Tema 3</h3>
+            </a>
+            <a href="tema4.html" class="box">
+                <img src="tema4-image.jpg" alt="Tema 4 Image">
+                <h3>Tema 4</h3>
+            </a>
+            <a href="tema5.html" class="box">
+                <img src="tema5-image.jpg" alt="Tema 5 Image">
+                <h3>Tema 5</h3>
+            </a>
+        </div>
+
+        <main>
+        <h1>Mine 1. semesterprojekter</h1>
+        <h2>Tema 2</h2>
+        <p class="tema2p">I Tema 2 skulle vi kode vores første hjemmeside. Vi fik en introduktion til grundlæggende webudvikling og design, og vi fik introduceret de grundlæggende værktøjer vi kommer til at bruge på Multimediedesign, herunder digitale brugergrænseflader og responsivt webdesign. Vi fik  intro til HTML og CSS, og lærte at bruge dem i praksis. Derudover fik vi også introduceret Figma, Photoshop og Adobe XD.
+
+            Indenfor design arbejdede vi med designkonventioner,  moodboards og style tiles, som er brugbare redskaber til at komme igang med at designe og udvikle brugergrænseflader. De bruges også til at skabe wireframes i lo- og hi-fi prototyper. Derudover lærte vi også om farver, typografi, tekstopsætning, gestaltprincipper og ophavs- og licensrettigheder ved brug af billeder fra nettet. Indenfor kodning  fik vi introduktion til Visual Studo Code, som er vores ‘arbejdsplads’ indenfor kodning, hvordan vi får uploadet til vores egen hjemmeside med FileZilla, arbejdet med responsivt design, så vores hjemmesider fremadrettet kommer til at fungere og se godt ud på mobil såvel som på desktop, ved brug af media queries. Også hvordan vi får valideret vores HTML og CSS, så hjemmesiderne fremstår uden kodefejl. Vi arbejde også med  CSS grid og flexbox,  semantisk markup af billeder og tekst, og mappestruktur, så vi kan finde rundt i vores projekter, og hvordan vi inspicerer hjemmesider ved brug af Developer Tools.
+            
+            Mit færdige hjemmeside for Tema 2 kan i se på https://oliverole.dk/website_t2/index.html</p>
+            <p></p>
+            <h2>Tema 3</h2>
+            <p class="tema3p">
+                I Tema 3 skulle vi udvikle et emnesite, og jeg valgte temaet casino, da jeg selv arbejder som dealer på Copenhagen Casino i min fritid. VI lærte i bund og grund hvordan vi designer og udvikler digitale brugergrænseflader.
+    
+                Jeg startede med at udarbejde moodboards og style tile, så jeg kunne få en idé om, hvilket gennemgående tema der skulle være på mit site. Jeg valgte en moderne stil, da det var det, der fangede mig mest. Jeg begyndte derefter at udarbejde lo-fi wireframes til website og mobilversion, der endte med at se således ud:
+            </p>
+            <img class="wireframe3" src="images/wireframetema3.png" alt="wireframetema3">
+            <p class="tema3p2">Vi lærte hvordan vi valgte og tilpassede billeder til vores site, så der ikke var copyright, såkaldte ‘royalty free’ billeder.
+    
+                At få kodet mit design, som jeg lavede i Figma, viste at være sværere end jeg lige troede. Set i bakspejlet, skulle jeg have have haft kodningen mere i baghovedet da jeg udarbejdede mit design, og tænkt over, hvordan jeg kunne det gøre lækkert og se på, og nemmere at kode.
+                
+                Mit færdige site kan i se hvis i klikker her: https://oliverole.dk/index.html</p>
+                <h2>Tema 4</h2>
+        <p>I tema 4 lærte jeg ...</p>
+        <h2>Tema 5</h2>
+        <p class="tema3p">I Tema 5 skulle vi rebrande en virksomheds hjemmeside. Vi valgte i vores gruppe Nikolajs fars malerfirma.
+
+            Tema 5 forløb sig over 4 uger. Vi lærte først om videoproduktion, hvor vi skulle lave en klippeøvelse og et videosite, for at få en introduktion til videoredigering og filmning. Vi lærte om de forskellige filmformater, såsom .webP, .wav og .mp4.
+            Vi var også nede og besøge Tech & Story Lab, hvor de viste os det udstyr vi kunne låne til at filme og optage lyd.
+            
+            Vi skulle så derefter udarbejde vores virksomhedssite - vi startede med at få aftalt tidspunkter med Per, Nikolajs far, hvor vi kunne filme b-rolls og en videotimeline, som skulle køre på forsiden på Pers nye hjemmeside. Derudover skulle vi også lave et interview med Per.
+            
+            Efter filmeprocessen gik vi igang med kodning af Pers nye hjemmeside - vi startede ligesom i Tema 3 med at udarbejde moodboard, style tile og wireframes, for at få en idé om designet. Vi dragede inspiration fra andre malerfirmaers hjemmesider, og det gav et godt udgangspunkt.
+            
+            Sådan her så Pers forside ud på hans hjemmeside:</p>
+            <img class="persindex" src="images/persindex.png" alt="persindex">
+            <p class="tema3p">En meget gammeldags hjemmeside, som virkelig kunne trænge  ti l et redesign - og sådan her ser hjemmesiden ud,  efter vores
+                redesign: https://ixgg.dk/</p>
+    </main>
+
+
+    <div class="overlay">
+        <div class="box" onclick="boxClick(1)">
+            <img src="images/tema2.webp" alt="tema2-billede">
+        </div>
+        <div class="box" onclick="boxClick(2)">
+          <img src="images/blackjackindex.png" alt="casinobillede">
+        </div>
+        <div class="box" onclick="boxClick(3)">
+            <img src="images/blackjackindex.png" alt="casinobillede">
+        </div>
+        <div class="box" onclick="boxClick(4)">
+            <img src="path/to/image4.jpg" alt="Project 4">
+        </div>
+        <div class="box" onclick="boxClick(5)">
+            <img src="path/to/image5.jpg" alt="Project 5">
+        </div>
+    </div>
+        */

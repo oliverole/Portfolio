@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
-    <title>Document</title>
+    <script src="script.js"></script>
+    <title>Forside</title>
 </head>
 <body>
-          <header>
-
-          <nav>
-            <ul>
-              <li><a href="#forside">Forside</a></li>
-              <li><a href="#semesteropgaver">Semesteropgaver</a></li>
-              <li><a href="#cv">CV</a></li>
-            </ul>
-          </nav>
-    </header>
+  <header>
+    <nav>
+        <button id="menu-toggle" aria-expanded="false" aria-label="Toggle menu">&#9776;</button>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="semester.html">Semesteropgaver</a></li>
+            <li><a href="cv.html">CV</a></li>
+        </ul>
+    </nav>
+  </header>
+  
     <main>
-      <img class="billede" src="images/portfoli2.png" alt="baggrund">
+      <div class="portindex">
+      <img src="images/portindex.png" alt="Forside">
+      </div>
       <div class="overlay">
-        <div class="box" onclick="boxClick(1)"></div>
-        <div class="box" onclick="boxClick(2)"></div>
-        <div class="box" onclick="boxClick(3)"></div>
-        <div class="box" onclick="boxClick(4)"></div>
-        <div class="box" onclick="boxClick(5)"></div>
-    </div>
+        <section class="h1h2">
+          <h2 class="h2hvid">Velkommen til min portfolio over mine projekter på 1. semester</h2>
+          <h3 class="h3hvid">I det seneste halve år har vi været igennem seks temaer på Multimediedesign. Nedenunder kan i klikke for at komme ind på mine semesteropgaver eller se mit CV.</h3>
+        </section>
+          <div class="knapper">
+              <a href="semester.html" class="action-button">Semesteropgaver</a>
+              <a href="cv.html" class="action-button">CV</a>
+          </div>
+      </div>
       <img class="billede2" src="images/oval5.png" alt="baggrund2">
   </main>
   
-    <footer></footer>
+  <footer class="index-footer">
+    <div class="footerinfo">
+        <p>Oliver Juul Gosvig</p>
+        <p>olivergosvig@gmail.com</p>
+        <p>+45 22 26 18 98</p>
+    </div>
+</footer>
 </body>
 </html>

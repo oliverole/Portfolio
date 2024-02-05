@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Forside-filer/style.css">
+    <link rel="stylesheet" href="Forside-filer/layout.css">
+    <title>Forside</title>
+</head>
+<body>
+          <header>
+
+          <nav>
+            <ul>
+              <li><a href="http://127.0.0.1:5501/index.html">Forside</a></li>
+              <li><a href="http://127.0.0.1:5501/semester.html">Semesteropgaver</a></li>
+              <li><a href="http://127.0.0.1:5501/cv.html">CV</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+      <img class="billede" src="Forside-filer/portfoli2.png" alt="baggrund">
+      <div class="overlay">
+          <div class="description">
+              <h2>Velkommen til min portfolio over mine projekter på 1. semester</h2>
+          </div>
+          <div class="box" onclick="boxClick(1)">
+              <img src="Forside-filer/tema2.webp" alt="tema2-billede">
+          </div>
+          <div class="box" onclick="boxClick(2)">
+              <img src="Forside-filer/blackjackindex.png" alt="casinobillede">
+          </div>
+      </div>
+      <img class="billede2" src="Forside-filer/oval5.png" alt="baggrund2">
+  </main>
+  
+  <footer class="index-footer">
+    <div class="footerinfo">
+        <p>Oliver Juul Gosvig</p>
+        <p>olivergosvig@gmail.com</p>
+        <p>+45 22 26 18 98</p>
+    </div>
+</footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

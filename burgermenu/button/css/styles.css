@@ -1,0 +1,115 @@
+/* Generel styling */
+
+:root {
+    --clr-dark: #333;
+    --clr-darker: #111;
+    --clr-light: #fff;
+    --clr-light-toned: #abe;
+    --clr-accent: #f00;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* Layout af body, der sikrer footer i bunden ved manglende indhold i main */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+
+header,
+footer {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+.logo {
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+}
+
+/* GLOBAL MENU */
+
+/* STANDARD MENULINJE */
+
+header nav {
+    /* Flexbox items er div med logo, button (skjult) og ul menu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--clr-light);
+}
+
+.menu a:hover {
+    color: var(--clr-light-toned);
+}
+
+button {
+    color: var(--clr-light);
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Skjul burgermenulisten som standard */
+.menu {
+    display: none;
+}
+
+/* Vis menuen, når knappen er udvidet (åben) */
+button[aria-expanded="true"]+.menu {
+    display: flex;
+}
+
+/* Skjul burgermenu-ikonet som standard på større visninger */
+@media screen and (min-width: 769px) {
+    .menu {
+        display: flex;
+    }
+
+    button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        flex-direction: column;
+        width: 10em;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        background-color: var(--clr-dark);
+        z-index: 1;
+        /* z-index sikrer, at menuen er ovenpå andet indhold */
+    }
+
+    /* Styling af menupunkterne på mobil */
+    .menu li {
+        margin: 0;
+        padding: 10px 5px;
+    }
+}
